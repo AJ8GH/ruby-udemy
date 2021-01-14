@@ -16,7 +16,7 @@ p senator.name
 
 puts
 
-#  all works fine... unless we forget order and pass args in wrong order :::
+#  all works fine... unless we forget order and pass args in wrong order :
 congressman = Candidate.new('Kentucky', 53, 'Fishing', 'Banker', 'Mr. Smith')
 p congressman.occupation
 p congressman.birthplace
@@ -29,9 +29,8 @@ puts
 class Candidate
   attr_accessor :name, :age, :occupation, :hobby, :birthplace
   def initialize(name, details = {}) # empty hash default arg
-    # can still get an arg error if we forget to include the hash argument.
-    # wrong no. of arguments.
-    # to prevent this we can give default arg of empty hash
+    # can still get an arg error if we forget to include the hash argument or give wrong no. of arguments.
+    # To prevent this we can give default arg of empty hash
     # now leaving out the hash arg will return nil values instead of error
     defaults = {age: 35, occupation: 'Candidate', hobby: 'Running for office', birthplace: 'USA'}
     defaults.merge!(details) # overwrites any values in defualt if the user passes in their own value

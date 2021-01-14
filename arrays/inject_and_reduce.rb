@@ -1,6 +1,7 @@
 # inject and reduce are the exact same method with different names.
 # they do the exact same thing up to you which you use
-# useful when iterating over an array and you need to keep track of the computation of all elements prior to the one you are currently on.
+# useful when iterating over an array and you need to keep track of the
+# computation of all elements prior to the one you are currently on.
 # if we want to sum [10,20,30,40]
 #   we take 0 and add 10
 #   then take 10 and add 20
@@ -11,6 +12,7 @@
 # argument is not essential
 # previous represents the previous value
 # current represents current value you're on
+
 result = [10, 20, 30, 40].reduce(0) do |previous, current|
   puts "The previous value is #{previous}"
   puts "The current value is #{current}"

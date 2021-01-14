@@ -38,11 +38,11 @@ p phone.production_number
         # def username=(new_username) # this method is different to the getter method above
         #   @username = new_username # this one is for overwriting a new username
         # end
-  # attr_reader :production  --- replaces :::
+  # attr_reader :production  --- replaces :
         # def production_number
         #   @production_number
         # end
-  # attr_writer :password --- replacing :::
+  # attr_writer :password --- replacing :
         # def password=(password)
         #   @password = password
         # end

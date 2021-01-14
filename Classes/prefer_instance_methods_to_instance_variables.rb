@@ -15,12 +15,14 @@
 # and whenever dealing with getters we can remove self kw, as ruby knows we mean the
 # instance method available on that object
 # we can't remove self from class however, as class is a built in Ruby KW and ruby gets confused
-# so now we have :::
+# so now we have :
 #   def to_s
 #     "Gadget #{production_number} has the username #{username}.
 #     It is made from the #{self.class} class and it
 #     has the ID #{object_id}."
 #   end
+#
+# see gadget.rb for example of how it works
 #
 # instead of referencing our username instance variable we are triggering
 # our username instance method, which accesses the instance variable
